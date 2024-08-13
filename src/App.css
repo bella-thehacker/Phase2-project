@@ -62,3 +62,38 @@ footer a{
 footer a:hover{
     cursor: pointer;
 }
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h3{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+}
+
+.content{
+  padding: 15px;
+  width: 750px;
+
+  h3{
+    color: navy;
+  }
+}
