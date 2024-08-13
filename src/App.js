@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css'
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Academics from './components/Academics';
+import CoCurriculars from './components/Cocurricular';
+import ApplyNow from './components/ApplyNow';
+import OurPartners from './components/OurPartners';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => (
+  <Router>
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/partners" element={<OurPartners/>} />
+        <Route path="/academics" element={<Academics />} />
+        <Route path="/co-curriculars" element={<CoCurriculars />} />
+        <Route path="/apply-now" element={<ApplyNow />} />
+        
+      </Routes>
     </div>
-  );
-}
+  </Router>
+);
 
 export default App;
