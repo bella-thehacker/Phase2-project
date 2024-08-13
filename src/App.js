@@ -8,10 +8,12 @@ import CoCurriculars from './components/Cocurricular';
 import ApplyNow from './components/ApplyNow';
 import OurPartners from './components/OurPartners';
 import Footer from './components/Footer';
+import ApplicationForm from './components/ApplicationForm';
 
 const App = () => (
   
     <div>
+      <div>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +23,11 @@ const App = () => (
         <Route path="/apply-now" element={<ApplyNow />} />
         
       </Routes>
+      </div>
+      
+      <div>
       <Footer />
+      </div>
     </div>
   
 );
