@@ -8,24 +8,33 @@ function Footer() {
   return (
     <footer>
       <h1>Find us on:</h1>
+      <h1>Find us on:</h1>
+
       <div>
         <ul>
           <li>
-            
             {" "}
-            <a href="https://www.instagram.com/novapioneer"><FaInstagram color="white" /></a>
+            <a href="https://www.instagram.com/novapioneer">
+              <FaInstagram color="white" />
+            </a>
           </li>
           <li>
-         
-            <a href="https://www.facebook.com/novapioneerkenya/"> <FaFacebook color="white" /></a>
+            <a href="https://www.facebook.com/novapioneerkenya/">
+              {" "}
+              <FaFacebook color="white" />
+            </a>
           </li>
           <li>
-         
-            <a href="https://x.com/nova_pioneer"> <FaXTwitter color="white" /></a>
+            <a href="https://x.com/nova_pioneer">
+              {" "}
+              <FaXTwitter color="white" />
+            </a>
           </li>
           <li>
-         
-            <a href="#"> <AiFillTikTok color="white" /></a>
+            <a href="#">
+              {" "}
+              <AiFillTikTok color="white" />
+            </a>
           </li>
         </ul>
       </div>
