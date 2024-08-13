@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer>
       <h1>Find us on:</h1>
-      <h1>Find us on:</h1>
+      
 
       <div>
         <ul>
