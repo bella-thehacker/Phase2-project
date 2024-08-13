@@ -1,99 +1,38 @@
-
-.navbar {
-  background-color:rgba(0, 0, 128, 0.808);
-  padding: 20px;
+.App {
+  text-align: center;
 }
 
-.navbar-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
-}
-
-.navbar-item {
-  margin-right: 15px;
-}
-
-.navbar-item a {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
   color: white;
-  text-decoration: none;
-  padding: 5px 10px;
 }
 
-.navbar-item a.active {
-  border-bottom: 2px solid #fff;
+.App-link {
+  color: #61dafb;
 }
 
-.navbar-item a:hover {
-  background-color: #575757;
-  border-radius: 4px;
-}
-
-footer{
-    display: flex;
-    justify-content: center;
-    background-color: navy;
-    width: 100%;
-    height: 15rem;
-}
-
-footer h1{
-    color: white;
-    padding-top: 2%;
-}
-
-footer div{
-    margin-top: 10%;
-    text-align: center;
-    margin-right: 25%;
-}
-
-footer li{
-    list-style: none;
-
-}
-
-footer a{
-    color: white;
-    
-}
-
-footer a:hover{
-    cursor: pointer;
-}
-
-.banner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.intro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contentContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    h3{
-        text-align: center;
-    }
-
-    p{
-        text-align: center;
-    }
-}
-
-.content{
-  padding: 15px;
-  width: 750px;
-
-  h3{
-    color: navy;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
