@@ -7,9 +7,10 @@ import Academics from './components/Academics';
 import CoCurriculars from './components/Cocurricular';
 import ApplyNow from './components/ApplyNow';
 import OurPartners from './components/OurPartners';
+import Footer from './components/Footer';
 
 const App = () => (
-  <Router>
+  
     <div>
       <Navbar />
       <Routes>
@@ -20,8 +21,9 @@ const App = () => (
         <Route path="/apply-now" element={<ApplyNow />} />
         
       </Routes>
+      <Footer />
     </div>
-  </Router>
+  
 );
 
 export default App;
