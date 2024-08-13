@@ -20,7 +20,7 @@ function Home() {
             lorem ipsum lorem ipsum lorem ipsum
           </p>
         </div>
-        <div className="content">
+        <div className="content"> 
           <h3>Our Mission</h3>
           <p>
             lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
