@@ -1,3 +1,35 @@
+
+.navbar {
+  background-color:rgba(0, 0, 128, 0.808);
+  padding: 20px;
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-item {
+  margin-right: 15px;
+}
+
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.navbar-item a.active {
+  border-bottom: 2px solid #fff;
+}
+
+.navbar-item a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
 footer{
     display: flex;
     justify-content: center;
