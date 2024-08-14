@@ -15,6 +15,14 @@
       "age": "2",
       "email": "randomhuman0386@gmail.com",
       "phoneNumber": "254304"
+    },
+    {
+      "id": "8538",
+      "studentName": "Josh",
+      "gender": "M",
+      "age": "23",
+      "email": "joshua.nyambane@student.moringaschool",
+      "phoneNumber": "0707"
     }
   ]
 }
