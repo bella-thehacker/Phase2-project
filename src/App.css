@@ -104,7 +104,22 @@ footer a:hover{
   width: 10rem;
   height: 7rem;
   border: 0; 
-  
-
 }
 
+.academicContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.academicContent{
+  padding: 15px;
+  width: 300px;
+  height: 250px;
+  text-align: center;
+
+  h3{
+    color: navy;
+  }
+}
