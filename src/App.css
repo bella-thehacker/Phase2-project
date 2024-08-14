@@ -308,3 +308,37 @@ footer .socials a svg:hover {
     color: navy;
   }
 }
+.carousel{
+  width: 1500px;
+  margin: auto;
+}
+.carousel-inn{
+  margin-top: 20px;
+}
+.carousel-inn-out{
+  background-color: rgb(255, 255, 255);
+  height: 450px;
+  color: black;
+  border-radius: 15px;
+  border: solid rgb(34, 15, 202);
+}
+.carousel-img{
+  border-radius: 70px;
+}
+.c-image{
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.slick-slide > div {
+  margin: 10px;
+}
