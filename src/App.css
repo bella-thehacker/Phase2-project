@@ -1,6 +1,5 @@
-
 .navbar {
-  background-color:rgba(0, 0, 128, 0.808);
+  background-color: rgba(0, 0, 128, 0.808);
   padding: 20px;
 }
 
@@ -30,117 +29,139 @@
   border-radius: 4px;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    background-color: navy;
-    width: 100%;
-    height: 20rem;
+footer {
+  background-color: navy;
+  width: 100%;
 }
 
-footer h1{
-    color: white;
-    padding-top: 2%;
+footer h4 {
+  color: white;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 2%;
+}
+footer p {
+  color: white;
+
+  padding-left: 4%;
+}
+.bottom-pag {
+  padding-bottom: 2%;
 }
 
-footer div{
-    margin-top: 10%;
+footer .socials {
+  display: flex;
+  justify-content: center;
+  margin-right: 25%;
+}
+footer .socials a {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+footer .socials a svg {
+  color: white;
+  transition: color 0.2s;
+}
+
+footer .socials a svg:hover {
+  color: black;
+}
+
+.footer-bottom{
+  background-color: #000;
+  
+  text-align: center;
+  height: 3rem;
+}
+
+.footer-bottom p {
+  color: white;
+  padding-top: 1%
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
     text-align: center;
-    margin-right: 25%;
+  }
+
+  p {
+    text-align: center;
+  }
 }
 
-footer li{
-    list-style: none;
-
-}
-
-footer a{
-    color: white;
-    
-}
-
-footer a:hover{
-    cursor: pointer;
-}
-
-
-.banner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.intro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contentContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    h3{
-        text-align: center;
-    }
-
-    p{
-        text-align: center;
-    }
-}
-
-.content{
+.content {
   padding: 15px;
   width: 750px;
 
-  h3{
+  h3 {
     color: navy;
   }
 }
 
-.map{
-  border-radius: 25%;
-  width: 10rem;
-  height: 7rem;
-  border: 0; 
-  
-
+.map-div {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.loading{
+.map {
+  border-radius: 25%;
+  width: 7rem;
+  height: 5rem;
+  border: 0;
+}
+
+.loading {
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(255,255,0.8);
+  background-color: rgba(255, 255, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
 }
 
-.pop-up{
+.pop-up {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0,0,0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.popup-inner{
+.popup-inner {
   position: relative;
   padding: 32px;
   width: 100%;
   z-index: 1000;
 
   max-width: 640px;
-  
+
   background: white;
   backdrop-filter: blur(30px);
   border-radius: 16px;
@@ -154,12 +175,12 @@ footer a:hover{
   box-shadow: 34px 34px 68px #cccccc, -34px -34px 68px #f4f4f4;
 }
 
-.popup-inner:hover{
+.popup-inner:hover {
   cursor: pointer;
   -ms-zoom-animation: 5%;
 }
 
-.popup-inner img{
+.popup-inner img {
   margin-left: 25%;
   filter: saturate(150%);
 }
