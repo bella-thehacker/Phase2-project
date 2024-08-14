@@ -7,6 +7,14 @@
       "age": "18",
       "email": "qk8pO@example.com",
       "phoneNumber": "07111111111"
+    },
+    {
+      "id": "e304",
+      "studentName": "bella",
+      "gender": "female",
+      "age": "2",
+      "email": "randomhuman0386@gmail.com",
+      "phoneNumber": "254304"
     }
   ]
 }
