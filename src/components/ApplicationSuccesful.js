@@ -2,11 +2,16 @@ import React, { useState } from 'react'
 
 function ApplicationSuccessful() {
   const [closePopup, setClosePopup] = useState(false)
-  
-  return (
+
+  const close = () => {
+    setClosePopup(true)
+  }
+
+  return (!closePopup) ? (
+    
     <div className='pop-up'>
         <div className='popup-inner'>
-        <button> close</button>
+        <button onClick={close}> close</button>
         <div>
             <img src='https://img.icons8.com/?size=100&id=2sZ0sdlG9kWP&format=png&color=000000'></img>
             <h1>Congratulations your have successfully applied</h1>
@@ -15,7 +20,7 @@ function ApplicationSuccessful() {
         </div>
         
     </div>
-  )
+  ) : null
 }
 
 export default ApplicationSuccessful
