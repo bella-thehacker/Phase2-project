@@ -184,3 +184,98 @@ footer .socials a svg:hover {
   margin-left: 25%;
   filter: saturate(150%);
 }
+
+.co-curricular-div h2{
+  color: rgba(0, 0, 128, 0.808);
+  text-align: center;
+  
+}
+
+#leading{
+  text-align: center;
+  font-size: 120%;
+  color: rgba(0, 0, 128, 0.808);
+}
+.all-cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  
+}
+.extra-cards img{
+  width: 15rem;
+  margin-left: 12%;
+  
+  transform:
+    translateX(calc(var(--hover) * -1%))
+    scale(calc(1 + (var(--hover) * 0.2)));
+  transition: transform 0.2s;
+
+}
+
+.extra-cards h3{
+  text-align: center;
+  
+}
+.extra-cards{
+  width: 20rem;
+  height: 23rem;
+  /* background-color: rgba(0, 0, 128, 0.808); */
+  /* border: 1px solid black; */
+  padding: 10px;
+  margin: 2%;
+  --hover: 0;
+}
+
+.extra-cards:hover{
+  cursor: pointer;
+  --hover: 2;
+}
+
+.extra-cards p{
+    z-index: 1000;
+
+}
+
+.facilities{
+  display: flex;
+  justify-content: center;
+  padding-top: 15%;
+}
+
+.facilities h2{
+  width: 40%;
+  padding-right: 4%;
+  padding-top: 10%;
+}
+
+.talent h2{
+  margin-left: 30%;
+  padding-top: 5%
+}
+
+.talent{
+  padding-top: 6%;
+  padding-left: 10%;
+}
+
+
+
+
+
+.safety {
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.safety img{
+  width: 20rem;
+}
+
+.safety-h2{
+  width: 20rem;
+  padding-right: 4%;
+  padding-top: 10%;
+}

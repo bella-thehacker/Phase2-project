@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { AiFillTikTok } from "react-icons/ai";
 
 
-function Footer() {
+const Footer = () => {
   
 
   return (
