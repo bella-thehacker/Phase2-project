@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
+import ApplicationSuccessful from "./ApplicationSuccesful";
 
-const HandleSubmit = (event, studentName) => {
-  event.preventDefault();
-  alert(
-    `Thank you ${studentName} for your application to BaySide International. We look forward to your time with us.`
-  );
-};
+
 
 const ApplicationForm = () => {
+  const [showLoading, setShowLoading] = useState(false);
+  const [isSuccessful, setIsSuccessful]= useState(false)
   const [formData, setFormData] = useState({
     studentName: "",
     gender: "",
@@ -15,6 +13,22 @@ const ApplicationForm = () => {
     email: "",
     phoneNumber: "",
   });
+
+  const HandleSubmit = (event, studentName) => {
+    event.preventDefault();
+    setShowLoading(true);
+    setIsSuccessful(true)
+  
+    setTimeout(() => {
+      setShowLoading(false);
+    }, 6000);
+  
+    alert(
+      `Thank you ${studentName} for your application to BaySide International. We look forward to your time with us.`
+    );
+    
+    
+  };
 
   const [Applications, setApplications] = useState([]);
 
@@ -108,6 +122,17 @@ const ApplicationForm = () => {
         <div>
           <button type="submit">Submit</button>
         </div>
+
+        {showLoading && (
+          <img className="loading"
+            src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdW95eGUwajJrbDd4ZzJ4aG9pdDFmNWVxdDlldmo3cWJsbGQ1OHpmMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uIJBFZoOaifHf52MER/giphy.webp"
+            alt="loading screen"
+          ></img>
+        )}
+
+        {isSuccessful && (
+          <ApplicationSuccessful />
+        )}
       </form>
     </div>
   );
