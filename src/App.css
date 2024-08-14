@@ -70,16 +70,16 @@ footer .socials a svg:hover {
   color: black;
 }
 
-.footer-bottom{
+.footer-bottom {
   background-color: #000;
-  
+
   text-align: center;
   height: 3rem;
 }
 
 .footer-bottom p {
   color: white;
-  padding-top: 1%
+  padding-top: 1%;
 }
 
 .banner {
@@ -124,29 +124,27 @@ footer .socials a svg:hover {
 
 .map {
   border-radius: 25%;
-<<<<<<< HEAD
   width: 10rem;
   height: 7rem;
-  border: 0; 
+  border: 0;
 }
 
-.academicContainer{
+.academicContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
 }
 
-.academicContent{
+.academicContent {
   padding: 15px;
   width: 300px;
   height: 250px;
   text-align: center;
 
-  h3{
+  h3 {
     color: navy;
   }
-=======
   width: 7rem;
   height: 5rem;
   border: 0;
@@ -208,39 +206,34 @@ footer .socials a svg:hover {
   filter: saturate(150%);
 }
 
-.co-curricular-div h2{
+.co-curricular-div h2 {
   color: rgba(0, 0, 128, 0.808);
   text-align: center;
-  
 }
 
-#leading{
+#leading {
   text-align: center;
   font-size: 120%;
   color: rgba(0, 0, 128, 0.808);
 }
-.all-cards{
+.all-cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap-reverse;
-  
 }
-.extra-cards img{
+.extra-cards img {
   width: 15rem;
   margin-left: 12%;
-  
-  transform:
-    translateX(calc(var(--hover) * -1%))
+
+  transform: translateX(calc(var(--hover) * -1%))
     scale(calc(1 + (var(--hover) * 0.2)));
   transition: transform 0.2s;
-
 }
 
-.extra-cards h3{
+.extra-cards h3 {
   text-align: center;
-  
 }
-.extra-cards{
+.extra-cards {
   width: 20rem;
   height: 23rem;
   /* background-color: rgba(0, 0, 128, 0.808); */
@@ -250,41 +243,36 @@ footer .socials a svg:hover {
   --hover: 0;
 }
 
-.extra-cards:hover{
+.extra-cards:hover {
   cursor: pointer;
   --hover: 2;
 }
 
-.extra-cards p{
-    z-index: 1000;
-
+.extra-cards p {
+  z-index: 1000;
 }
 
-.facilities{
+.facilities {
   display: flex;
   justify-content: center;
   padding-top: 15%;
 }
 
-.facilities h2{
+.facilities h2 {
   width: 40%;
   padding-right: 4%;
   padding-top: 10%;
 }
 
-.talent h2{
+.talent h2 {
   margin-left: 30%;
-  padding-top: 5%
+  padding-top: 5%;
 }
 
-.talent{
+.talent {
   padding-top: 6%;
   padding-left: 10%;
 }
-
-
-
-
 
 .safety {
   display: flex;
@@ -293,13 +281,30 @@ footer .socials a svg:hover {
   padding-bottom: 5%;
 }
 
-.safety img{
+.safety img {
   width: 20rem;
 }
 
-.safety-h2{
+.safety-h2 {
   width: 20rem;
   padding-right: 4%;
   padding-top: 10%;
->>>>>>> 75be36a4e3ff047067647def51f4e66c2c3c29a6
+}
+
+.academicContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.academicContent {
+  padding: 15px;
+  width: 300px;
+  height: 250px;
+  text-align: center;
+  
+  h3 {
+    color: navy;
+  }
 }
