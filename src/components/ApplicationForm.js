@@ -131,13 +131,13 @@ const ApplicationForm = () => {
 
         {showLoading && (
           <img className="loading"
-            src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdW95eGUwajJrbDd4ZzJ4aG9pdDFmNWVxdDlldmo3cWJsbGQ1OHpmMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uIJBFZoOaifHf52MER/giphy.webp"
+            src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTBseHhhaTkwNGczbHI0aGpkN3FvbG9iMzAwaW9ibmhpMmhuanpmZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IzigGVSs9fHjug20Mq/giphy.webp"
             alt="loading screen"
           ></img>
         )}
 
         {isSuccessful && (
-          <ApplicationSuccessful />
+          <ApplicationSuccessful  />
         )}
       </form>
     </div>

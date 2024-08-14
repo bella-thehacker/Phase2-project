@@ -14,7 +14,7 @@ function ApplicationSuccessful() {
         <button onClick={close}> close</button>
         <div>
             <img src='https://img.icons8.com/?size=100&id=2sZ0sdlG9kWP&format=png&color=000000'></img>
-            <h1>Congratulations your have successfully applied</h1>
+            <h1>Congratulations  your have successfully applied</h1>
             <p>Check your email for more details!</p>
         </div>
         </div>
