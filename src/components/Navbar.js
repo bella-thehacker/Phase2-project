@@ -21,8 +21,8 @@ const Navbar = () => (
         </NavLink>
       </li>
       <li className="navbar-item">
-        <NavLink to="/co-curriculars" activeClassName="active">
-          Co-Curriculars
+        <NavLink to="/co-curricular" activeClassName="active">
+          Co-Curricular
         </NavLink>
       </li>
       <li className="navbar-item">

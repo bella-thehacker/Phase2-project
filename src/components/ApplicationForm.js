@@ -1,13 +1,9 @@
 import React, { useState, useEffect } from "react";
-
-const HandleSubmit = (event, studentName) => {
-  event.preventDefault();
-  alert(
-    `Thank you ${studentName} for your application to BaySide International. We look forward to your time with us.`
-  );
-};
+import ApplicationSuccessful from "./ApplicationSuccesful";
 
 const ApplicationForm = () => {
+  const [showLoading, setShowLoading] = useState(false);
+  const [isSuccessful, setIsSuccessful] = useState(false);
   const [formData, setFormData] = useState({
     studentName: "",
     gender: "",
@@ -15,6 +11,20 @@ const ApplicationForm = () => {
     email: "",
     phoneNumber: "",
   });
+
+  const HandleSubmit = (event, studentName) => {
+    event.preventDefault();
+    setShowLoading(true);
+
+    setTimeout(() => {
+      setShowLoading(false);
+      setIsSuccessful(true);
+    }, 6000);
+
+    alert(
+      `Thank you ${studentName} for your application to BaySide International. We look forward to your time with us.`
+    );
+  };
 
   const [Applications, setApplications] = useState([]);
 
@@ -67,6 +77,7 @@ const ApplicationForm = () => {
             placeholder="Student Name"
             value={formData.studentName}
             onChange={handleChange}
+            required
           />
         </div>
         <div>
@@ -76,6 +87,7 @@ const ApplicationForm = () => {
             placeholder="Gender"
             value={formData.gender}
             onChange={handleChange}
+            required
           />
         </div>
         <div>
@@ -85,6 +97,7 @@ const ApplicationForm = () => {
             placeholder="Age"
             value={formData.age}
             onChange={handleChange}
+            required
           />
         </div>
         <div>
@@ -94,6 +107,7 @@ const ApplicationForm = () => {
             placeholder="Email"
             value={formData.email}
             onChange={handleChange}
+            required
           />
         </div>
         <div>
@@ -103,11 +117,22 @@ const ApplicationForm = () => {
             placeholder="Phone Number"
             value={formData.phoneNumber}
             onChange={handleChange}
+            required
           />
         </div>
         <div>
           <button type="submit">Submit</button>
         </div>
+
+        {showLoading && (
+          <img
+            className="loading"
+            src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTBseHhhaTkwNGczbHI0aGpkN3FvbG9iMzAwaW9ibmhpMmhuanpmZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IzigGVSs9fHjug20Mq/giphy.webp"
+            alt="loading screen"
+          ></img>
+        )}
+
+        {isSuccessful && <ApplicationSuccessful />}
       </form>
     </div>
   );
