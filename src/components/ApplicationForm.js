@@ -17,10 +17,11 @@ const ApplicationForm = () => {
   const HandleSubmit = (event, studentName) => {
     event.preventDefault();
     setShowLoading(true);
-    setIsSuccessful(true)
+    
   
     setTimeout(() => {
       setShowLoading(false);
+      setIsSuccessful(true)
     }, 6000);
   
     alert(
@@ -81,6 +82,7 @@ const ApplicationForm = () => {
             placeholder="Student Name"
             value={formData.studentName}
             onChange={handleChange}
+            required
           />
         </div>
         <div>
@@ -90,6 +92,7 @@ const ApplicationForm = () => {
             placeholder="Gender"
             value={formData.gender}
             onChange={handleChange}
+            required
           />
         </div>
         <div>
@@ -99,6 +102,7 @@ const ApplicationForm = () => {
             placeholder="Age"
             value={formData.age}
             onChange={handleChange}
+            required
           />
         </div>
         <div>
@@ -108,6 +112,7 @@ const ApplicationForm = () => {
             placeholder="Email"
             value={formData.email}
             onChange={handleChange}
+            required
           />
         </div>
         <div>
@@ -117,6 +122,7 @@ const ApplicationForm = () => {
             placeholder="Phone Number"
             value={formData.phoneNumber}
             onChange={handleChange}
+            required
           />
         </div>
         <div>
