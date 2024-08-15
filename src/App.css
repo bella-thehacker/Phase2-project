@@ -35,14 +35,14 @@ footer {
 }
 
 footer h4 {
-  color: white;
-  font-weight: 200;
+  color: #f09819;
+  font-weight: 600;
   letter-spacing: 2px;
   text-align: center;
   padding-top: 2%;
 }
 footer p {
-  color: white;
+  color: #f09819;
 
   padding-left: 4%;
 }
@@ -63,11 +63,11 @@ footer .socials a {
 
 footer .socials a svg {
   color: white;
-  transition: color 0.2s;
+  transition: color 0.5s;
 }
 
 footer .socials a svg:hover {
-  color: black;
+  color: #f09819;
 }
 
 .footer-bottom {
@@ -150,13 +150,14 @@ footer .socials a svg:hover {
   border: 0;
 }
 
-.loading {
+#loading {
   width: 100%;
   height: 100%;
+  margin-right: 55%;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 0.8);
+  background-color: rgb(39, 39, 38);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,6 +174,7 @@ footer .socials a svg:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 70%;
 }
 
 .popup-inner {
@@ -204,6 +206,50 @@ footer .socials a svg:hover {
 .popup-inner img {
   margin-left: 25%;
   filter: saturate(150%);
+}
+
+.popup-inner button#popup-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: red;
+
+  
+  background-color: red;
+  
+  border: 2px solid red;
+  
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  padding: 7px;
+}
+
+.popup-inner button#popup-button::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: red;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.popup-inner button#popup-button:hover::before {
+  width: 105%;
+}
+
+.popup-inner button#popup-button:hover {
+  color: #000;
 }
 
 .co-curricular-div h2 {
@@ -303,8 +349,7 @@ footer .socials a svg:hover {
   width: 300px;
   height: 450px;
   text-align: center;
-  
-  
+
   h3 {
     color: navy;
   }
@@ -319,7 +364,7 @@ footer .socials a svg:hover {
   padding-left: 25px;
 }
 
-.carousel{
+.carousel {
   width: 1500px;
   margin: auto;
 
@@ -327,27 +372,27 @@ footer .socials a svg:hover {
     text-align: center;
   }
 }
-.carousel-inn{
+.carousel-inn {
   margin-top: 20px;
 }
-.carousel-inn-out{
+.carousel-inn-out {
   background-color: rgb(255, 255, 255);
   height: 450px;
   color: black;
   border-radius: 15px;
   border: solid rgb(34, 15, 202);
 }
-.carousel-img{
+.carousel-img {
   border-radius: 70px;
 }
-.c-image{
+.c-image {
   height: 200px;
   width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.details{
+.details {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -361,6 +406,7 @@ footer .socials a svg:hover {
 .slick-slide > div {
   margin: 10px;
 }
+
 
 /* Custom arrows */
 .custom-prev-arrow,
@@ -386,5 +432,137 @@ footer .socials a svg:hover {
   left: 1500px; 
   top: 50%;
   transform: translateY(-50%); 
+}
+
+=======
+.form {
+  margin-left: 15%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+  width: 800px;
+  padding: 40px;
+
+  background: rgba(0, 0, 128, 0.808);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.form .apply-top {
+  display: flex;
+  justify-content: center;
+  margin-right: 25%;
+}
+
+.apply-top h2 {
+  margin-left: 2%;
+  margin-top: 10%;
+  padding: 1%;
+  color: #fff;
+}
+
+#form-img {
+  margin-left: 43%;
+  margin-top: 3%;
+}
+
+.form h1 {
+  text-align: center;
+  color: #f09819;
+  padding-top: 2%;
+}
+
+.form input {
+  margin-left: 13%;
+  margin-bottom: 3%;
+  width: 60%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.form ::placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.form input:focus::placeholder,
+.form input:valid::placeholder {
+  top: -10px;
+  left: 0;
+  color: #f09819;
+  font-size: 12px;
+}
+
+.form button {
+  margin-left: 43%;
+  margin-bottom: 4%;
+  background-color: #f09819;
+  color: #fff;
+  border: 2px solid #f09819;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  padding: 7px;
+}
+
+.form button::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #f09819;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+form button:hover::before {
+  width: 105%;
+}
+
+.form button:hover {
+  color: #000;
+}
+
+.deadline {
+  text-align: center;
+  padding-top: 2%;
+  font-size: 150%;
 }
 
