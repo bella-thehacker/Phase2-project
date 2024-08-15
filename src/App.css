@@ -32,6 +32,7 @@
 footer {
   background-color: navy;
   width: 100%;
+  margin-top: 5%;
 }
 
 footer h4 {
@@ -98,6 +99,7 @@ footer .socials a svg:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20%;
 
   h3 {
     text-align: center;
@@ -278,6 +280,7 @@ footer .socials a svg:hover {
 
 .extra-cards h3 {
   text-align: center;
+  
 }
 .extra-cards {
   width: 20rem;
@@ -361,7 +364,7 @@ footer .socials a svg:hover {
 }
 
 #subjects {
-  padding-left: 25px;
+  padding-left: 2px;
 }
 
 .carousel {
@@ -565,3 +568,158 @@ form button:hover::before {
   font-size: 150%;
 }
 
+.learning-approach{
+  display: flex;
+  justify-content: center;
+}
+
+.learning-approach img{
+  width: 100%;
+  height: 100vh;
+}
+
+.learning-approach h2{
+  margin-top: 40%;
+  position: absolute;
+  top: -35%;
+  left:60%;
+  color: #000;
+  letter-spacing: 3px;
+  font-size: 200%;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.student-centered{
+  display: flex;
+  justify-content: center;
+  margin: 10%;
+}
+
+.student-centered p{
+  width: 17rem;
+  padding-right: 5%;
+  padding-top: 7%;
+}
+
+.hands-on{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+.hands-on p{
+  width: 15rem;
+  margin-left: 2%;
+}
+
+.collaborative{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7%;
+}
+
+.collaborative img{
+  width: 20rem;
+}
+
+.collaborative p{
+  padding-top: 10%;
+  width: 15rem;
+  padding-right: 4%;
+}
+
+.subjects{
+  width: 15rem;
+  text-align: center;
+  
+  li{
+    padding-bottom: 5%;
+    margin-right: 15%;
+  }
+}
+
+.subjects h3{
+  text-align: center;
+  padding-top: 2%;
+}
+
+
+.subjects:hover{
+  cursor: pointer;
+  background-color: navy;
+  box-shadow: 34px 34px 68px #cccccc, -34px -34px 68px #f4f4f4;
+
+  h3{
+    color: #f09819;
+  }
+
+  li{
+    color: #fff;
+  }
+}
+
+.history{
+  width: 20rem;
+  text-align: center;
+  padding-bottom: 2%;
+  
+  
+}
+.history h3{
+  text-align: center;
+  padding-top: 2%;
+}
+
+.history p{
+  width: 15rem;
+  margin-left: 15%;
+  padding-bottom: 2%;
+}
+
+
+.history:hover{
+  cursor: pointer;
+  background-color: navy;
+  box-shadow: 34px 34px 68px #cccccc, -34px -34px 68px #f4f4f4;
+
+  h3{
+    color: #f09819;
+  }
+
+  p{
+    color: #fff;
+  }
+}
+
+.target{
+  width: 20rem;
+  text-align: center;
+  
+  
+}
+.target h3{
+  padding-top: 2%;
+}
+
+.target p{
+  width: 20rem;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+
+.target:hover{
+  cursor: pointer;
+  background-color: navy;
+  box-shadow: 34px 34px 68px #cccccc, -34px -34px 68px #f4f4f4;
+
+  h3{
+    color: #f09819;
+  }
+
+  p{
+    color: #fff;
+  }
+}
