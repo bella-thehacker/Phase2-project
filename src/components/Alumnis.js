@@ -92,4 +92,4 @@ const Alumnis = () => {
         },
       ]
     
-export default Alumnis
+export default Alumnis;
