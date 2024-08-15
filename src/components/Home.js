@@ -24,7 +24,7 @@ function Home() {
             In all of our schools, we bring in and train top educators to
             deliver educational excellence in an environment that nurtures our
             students to uncover their potential and blaze trails in the world
-            beyond our school walls. Nova Pioneer students develop into
+            beyond our school walls.Our students develop into
             life-long learners who can uncover their talents and potential.
           </p>
         </div>
@@ -33,7 +33,7 @@ function Home() {
         <div className="why-div">
           <img src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600"></img>
           <div className="why-text">
-            <h4>About</h4>
+            <h4>About us</h4>
             <p>
               We are a network of schools developing generations of innovators
               and leaders who will shape the African Century. We launched our
