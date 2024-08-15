@@ -25,7 +25,7 @@ const Academics = () => {
       </div>
       <div className="academicContainer">
         <div className="academicContent">
-          <h3>Subjects Offered</h3>
+          <h3 id="subjects">Subjects Offered</h3>
           <ul>
             <li>English</li>
             <li>Mathematics</li>

@@ -304,10 +304,21 @@ footer .socials a svg:hover {
   height: 450px;
   text-align: center;
   
+  
   h3 {
     color: navy;
   }
 }
+
+.academicContent li {
+  list-style: none;
+  padding: 5px;
+}
+
+#subjects {
+  padding-left: 25px;
+}
+
 .carousel{
   width: 1500px;
   margin: auto;
