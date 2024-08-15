@@ -367,6 +367,10 @@ footer .socials a svg:hover {
 .carousel {
   width: 1500px;
   margin: auto;
+
+  h1{
+    text-align: center;
+  }
 }
 .carousel-inn {
   margin-top: 20px;
@@ -394,11 +398,43 @@ footer .socials a svg:hover {
   justify-content: center;
   align-items: center;
   padding: 5px;
+
+  p{
+    text-align: center;
+  }
 }
 .slick-slide > div {
   margin: 10px;
 }
 
+
+/* Custom arrows */
+.custom-prev-arrow,
+.custom-next-arrow {
+  background-color: navy; 
+  color: #fff; 
+  border: none;
+  border-radius: 10%;
+  padding: 10px; 
+  cursor: pointer; 
+  font-size: 24px;
+}
+
+.custom-prev-arrow {
+  position: absolute;
+  right: 1500px; 
+  top: 50%;
+  transform: translateY(-50%); 
+}
+
+.custom-next-arrow {
+  position: absolute;
+  left: 1500px; 
+  top: 50%;
+  transform: translateY(-50%); 
+}
+
+=======
 .form {
   margin-left: 15%;
   margin-top: 10%;
@@ -529,3 +565,4 @@ form button:hover::before {
   padding-top: 2%;
   font-size: 150%;
 }
+
