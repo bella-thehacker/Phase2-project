@@ -29,7 +29,7 @@ const ApplicationForm = () => {
   const [Applications, setApplications] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/Applications")
+    fetch("https://phase-2-project-bice.vercel.app/Applications")
       .then((res) => res.json())
       .then((data) => setApplications(data));
   }, []);
@@ -45,7 +45,7 @@ const ApplicationForm = () => {
   const handleSubmit = (event) => {
     HandleSubmit(event, formData.studentName);
 
-    fetch("http://localhost:3000/Applications", {
+    fetch("https://phase-2-project-bice.vercel.app/Applications", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
