@@ -8,7 +8,7 @@ function Home() {
         <h1>Welcome to BaySide International Highschool</h1>
       </div>
       <div className="intro">
-        <p>Nurturing a tradition of learning and exellence</p>
+        <p>Nurturing a tradition of learning and excellence</p>
       </div>
       <div className="contentContainer">
         <div className="content">
@@ -40,7 +40,7 @@ function Home() {
           </p>
         </div>
       </div>
-      <Alumnis/>
+      { <Alumnis /> }
     </div>
   );
 }
