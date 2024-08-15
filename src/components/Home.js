@@ -1,5 +1,4 @@
 import React from "react";
-import Alumnis from "./Alumnis";
 
 function Home() {
   return (
@@ -40,7 +39,6 @@ function Home() {
           </p>
         </div>
       </div>
-      { <Alumnis /> }
     </div>
   );
 }
