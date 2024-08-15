@@ -1,5 +1,4 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from 'react';import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -8,6 +7,7 @@ import CoCurricular from './components/CoCurricular';
 import ApplyNow from './components/ApplyNow';
 import OurPartners from './components/OurPartners';
 import Footer from './components/Footer';
+import Campus from './components/Campus';
 
 
 const App = () => (
@@ -20,7 +20,9 @@ const App = () => (
         <Route path="/partners" element={<OurPartners/>} />
         <Route path="/academics" element={<Academics />} />
         <Route path="/co-curricular" element={<CoCurricular />} />
+        <Route path="/campus" element={<Campus />} />
         <Route path="/apply-now" element={<ApplyNow />} />
+    
         
       </Routes>
       </div>
@@ -29,7 +31,7 @@ const App = () => (
       <Footer />
       </div>
     </div>
-  
+   
 );
 
 export default App;

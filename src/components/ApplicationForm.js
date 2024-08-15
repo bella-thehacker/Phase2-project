@@ -21,15 +21,13 @@ const ApplicationForm = () => {
       setIsSuccessful(true);
     }, 6000);
 
-    alert(
-      `Thank you ${studentName} for your application to BaySide International. We look forward to your time with us.`
-    );
+   
   };
 
   const [Applications, setApplications] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/Applications")
+    fetch("https://phase-2-project-bice.vercel.app/Applications")
       .then((res) => res.json())
       .then((data) => setApplications(data));
   }, []);
@@ -45,7 +43,7 @@ const ApplicationForm = () => {
   const handleSubmit = (event) => {
     HandleSubmit(event, formData.studentName);
 
-    fetch("http://localhost:3000/Applications", {
+    fetch("https://phase-2-project-bice.vercel.app/Applications", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -67,7 +65,14 @@ const ApplicationForm = () => {
   };
 
   return (
+
     <div>
+      <h3 className="deadline">Application Deadline: September 30th, 2024 | Entrance Exams: October 15th, 2024</h3>
+    <div className="form">
+      <div className="apply-top">
+      <img id="form-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEg6bo3ya8C4GEhFORrFauCxWbGSdLPzXsIw&s" alt="school logo"></img>
+      <h2>Bayside international school</h2>
+      </div>
       <h1>Application Form</h1>
       <form onSubmit={handleSubmit}>
         <div>
@@ -121,19 +126,20 @@ const ApplicationForm = () => {
           />
         </div>
         <div>
-          <button type="submit">Submit</button>
+          <button type="submit">Apply Now</button>
         </div>
 
         {showLoading && (
           <img
-            className="loading"
-            src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTBseHhhaTkwNGczbHI0aGpkN3FvbG9iMzAwaW9ibmhpMmhuanpmZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IzigGVSs9fHjug20Mq/giphy.webp"
+            id="loading"
+            src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnhjcmt1cTQxNDJ0eGt2Z2JtMzdoczd5NTI1d2VkbnBpdDhqcmtldiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/uIJBFZoOaifHf52MER/200.webp"
             alt="loading screen"
           ></img>
         )}
 
         {isSuccessful && <ApplicationSuccessful />}
       </form>
+    </div>
     </div>
   );
 };
