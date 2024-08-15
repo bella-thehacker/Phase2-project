@@ -29,6 +29,67 @@
   border-radius: 4px;
 }
 
+
+
+.video-div{
+  display: flex;
+  justify-content: center;
+}
+
+.video-div p{
+  width: 20rem;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: rgba(0, 0, 128, 0.808);
+  border-radius: 15%;
+  text-align: center;
+  padding-top: 3%;
+  margin-left: 4%;
+  color: #f09819;
+}
+
+.video-div img{
+  width: 5rem;
+}
+
+.why-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+.why-div img{
+  width: 30rem;
+}
+
+.why-div{
+  text-align: center;
+  padding: 5%;
+  position: relative;
+}
+
+.why-text {
+  position: absolute;
+  width: 18rem;
+  padding: 3%;
+  background-color: white;
+  border-radius: 15%;
+  top: 300px;
+  left: 45px;
+  border-radius: 10px;
+  padding: 15px;
+  z-index: 10; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.why-text h4{
+  color: #f09819;
+}
+
+.why-text p{
+  color: navy;
+}
+
+
 footer {
   background-color: navy;
   width: 100%;
@@ -89,17 +150,47 @@ footer .socials a svg:hover {
   align-items: center;
 }
 
-.intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.banner img{
+  width: 100%;
+  height: 10%;
+  
 }
+
+.banner .intro img{
+  width: 10rem;
+  height: 7rem;
+  
+  
+  
+}
+
+.banner .intro{
+  margin-top: 30%;
+  position: absolute;
+  top: -35%;
+  left: 5%;
+
+  letter-spacing: 3px;
+  font-size: 150%;
+  
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+  
+  
+}
+
+.banner .intro p{
+  text-align: center;
+}
+
 
 .contentContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20%;
+  margin-bottom: 5%;
 
   h3 {
     text-align: center;
@@ -107,15 +198,19 @@ footer .socials a svg:hover {
 
   p {
     text-align: center;
+    color: navy;
   }
 }
 
 .content {
-  padding: 15px;
-  width: 750px;
+  padding: 5%;
+  width: 25rem;
+  height: 10rem;
+  margin-bottom: 5%;
+  border-right: 1px solid black;
 
   h3 {
-    color: navy;
+    color: #f09819;
   }
 }
 
@@ -133,16 +228,18 @@ footer .socials a svg:hover {
 
 .academicContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  
+
 }
 
 .academicContent {
-  padding: 15px;
-  width: 300px;
-  height: 250px;
+  
+ 
   text-align: center;
+  margin-right: 20%;
+  
 
   h3 {
     color: navy;
@@ -210,16 +307,21 @@ footer .socials a svg:hover {
   filter: saturate(150%);
 }
 
+.popup-inner p{
+  text-align: center;
+  color: #f09819;
+}
+
 .popup-inner button#popup-button {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: red;
+  color: #f09819;
 
   
-  background-color: red;
+  background-color: #f09819;
   
-  border: 2px solid red;
+  border: 2px solid navy;
   
   overflow: hidden;
   background-color: transparent;
@@ -231,6 +333,9 @@ footer .socials a svg:hover {
   font-family: inherit;
   padding: 7px;
 }
+.popup-inner #popup-h1{
+  color: navy;
+}
 
 .popup-inner button#popup-button::before {
   content: "";
@@ -240,7 +345,7 @@ footer .socials a svg:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  background: red;
+  background: #f09819;
   transition: 0.5s ease;
   display: block;
   z-index: -1;
@@ -251,7 +356,9 @@ footer .socials a svg:hover {
 }
 
 .popup-inner button#popup-button:hover {
-  color: #000;
+  color: navy;
+  border: 2px solid #f09819;
+
 }
 
 .co-curricular-div h2 {
@@ -349,8 +456,9 @@ footer .socials a svg:hover {
 
 .academicContent {
   padding: 15px;
-  width: 300px;
-  height: 450px;
+  margin-bottom: 30%;
+  margin-right: 15%;
+  
   text-align: center;
 
   h3 {
@@ -631,8 +739,9 @@ form button:hover::before {
 }
 
 .subjects{
-  width: 15rem;
+  width: 20rem;
   text-align: center;
+  border-right: 1px solid navy;
   
   li{
     padding-bottom: 5%;
@@ -661,21 +770,26 @@ form button:hover::before {
 }
 
 .history{
-  width: 20rem;
+  width: 25rem;
   text-align: center;
   padding-bottom: 2%;
+  border-right: 1px solid navy;
+  
   
   
 }
 .history h3{
   text-align: center;
   padding-top: 2%;
+  
 }
 
 .history p{
   width: 15rem;
-  margin-left: 15%;
+  margin-left: 20%;
+
   padding-bottom: 2%;
+  text-align: center;
 }
 
 
@@ -694,8 +808,10 @@ form button:hover::before {
 }
 
 .target{
-  width: 20rem;
+  width: 25rem;
   text-align: center;
+  border-right: 1px solid navy;
+ 
   
   
 }
@@ -707,6 +823,7 @@ form button:hover::before {
   width: 20rem;
   text-align: center;
   padding-bottom: 2%;
+  margin-left: 10%;
 }
 
 
