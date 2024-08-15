@@ -840,3 +840,33 @@ form button:hover::before {
     color: #fff;
   }
 }
+.image-one{
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  border: solid navy 5px;
+}
+.image-two{
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  border: solid navy 5px;
+}
+.image-three{
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  border: solid navy 5px;
+}
+.row-inn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+}
+.row-inn-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
