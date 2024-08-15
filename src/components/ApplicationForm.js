@@ -21,9 +21,7 @@ const ApplicationForm = () => {
       setIsSuccessful(true);
     }, 6000);
 
-    alert(
-      `Thank you ${studentName} for your application to BaySide International. We look forward to your time with us.`
-    );
+   
   };
 
   const [Applications, setApplications] = useState([]);
