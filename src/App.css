@@ -1,6 +1,8 @@
 .navbar {
   background-color: rgba(0, 0, 128, 0.808);
-  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  height: 50px;
 }
 
 .navbar-list {
@@ -361,7 +363,7 @@ footer .socials a svg:hover {
 
 }
 
-.co-curricular-div h2 {
+.co-curricular-div h1 {
   color: rgba(0, 0, 128, 0.808);
   text-align: center;
 }
@@ -374,23 +376,32 @@ footer .socials a svg:hover {
 .all-cards {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap-reverse;
-}
+  flex-direction: column;
+  }
+  .row-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    height: 550px;
+  }
 .extra-cards img {
-  width: 15rem;
+  width: 400px;
   margin-left: 12%;
+  border-radius: 15px;
 
-  transform: translateX(calc(var(--hover) * -1%))
+  /* transform: translateX(calc(var(--hover) * -1%))
     scale(calc(1 + (var(--hover) * 0.2)));
-  transition: transform 0.2s;
+  transition: transform 0.2s; */
 }
 
-.extra-cards h3 {
+.extra-cards h1 {
   text-align: center;
+  font-size: 40px;
   
 }
 .extra-cards {
-  width: 20rem;
+  width: 600px;
   height: 23rem;
   /* background-color: rgba(0, 0, 128, 0.808); */
   /* border: 1px solid black; */
@@ -413,7 +424,9 @@ footer .socials a svg:hover {
   justify-content: center;
   padding-top: 15%;
 }
-
+.facilities img{
+  border-radius: 15px;
+}
 .facilities h2 {
   width: 40%;
   padding-right: 4%;
@@ -422,14 +435,17 @@ footer .socials a svg:hover {
 
 .talent h2 {
   margin-left: 30%;
-  padding-top: 5%;
+  padding-top: 50px;
 }
 
 .talent {
   padding-top: 6%;
   padding-left: 10%;
+  
 }
-
+.talent img{
+  border-radius: 15px;
+}
 .safety {
   display: flex;
   justify-content: center;
@@ -439,6 +455,7 @@ footer .socials a svg:hover {
 
 .safety img {
   width: 20rem;
+  border-radius: 15px;
 }
 
 .safety-h2 {
@@ -488,7 +505,7 @@ footer .socials a svg:hover {
 }
 .carousel-inn-out {
   background-color: rgb(255, 255, 255);
-  height: 450px;
+  height: 550px;
   color: black;
   border-radius: 15px;
   border: solid rgb(34, 15, 202);
@@ -869,4 +886,7 @@ form button:hover::before {
   flex-direction: row;
   justify-content: space-evenly;
   
+}
+p {
+  font-size: x-large;
 }
