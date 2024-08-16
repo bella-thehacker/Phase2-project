@@ -36,7 +36,9 @@ const Academics = () => {
       </div>
      
       <div className="academicContainer">
+        
         <div className="academicContent">
+         
           <div className="subjects">
             <h3 id="subjects">Subjects Offered</h3>
             <ul>
@@ -91,6 +93,7 @@ const Academics = () => {
               internships to enhance your hands-on learning and professional
               development.
             </p>
+            
           </div>
         </div>
       </div>
