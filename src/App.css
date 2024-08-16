@@ -1,3 +1,4 @@
+
 .navbar {
   background-color: rgba(0, 0, 128, 0.808);
   padding-top: 30px;
@@ -473,19 +474,23 @@ footer .socials a svg:hover {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
+
+.App {
+  text-align: center;
 }
 
-.academicContent {
-  padding: 15px;
-  margin-bottom: 30%;
-  margin-right: 15%;
-  
-  text-align: center;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 
-  h3 {
-    color: navy;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
 }
+
 
 .academicContent li {
   list-style: none;
@@ -525,63 +530,14 @@ footer .socials a svg:hover {
   justify-content: center;
 }
 .details {
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 5px;
-
-  p{
-    text-align: center;
-  }
-}
-.slick-slide > div {
-  margin: 10px;
-}
-
-
-/* Custom arrows */
-.custom-prev-arrow,
-.custom-next-arrow {
-  background-color: navy; 
-  color: #fff; 
-  border: none;
-  border-radius: 10%;
-  padding: 10px; 
-  cursor: pointer; 
-  font-size: 24px;
-}
-
-.custom-prev-arrow {
-  position: absolute;
-  right: 1500px; 
-  top: 50%;
-  transform: translateY(-50%); 
-}
-
-.custom-next-arrow {
-  position: absolute;
-  left: 1500px; 
-  top: 50%;
-  transform: translateY(-50%); 
-}
-
-.form {
-  margin-left: 15%;
-  margin-top: 10%;
-  margin-bottom: 10%;
-
-  width: 800px;
-  padding: 40px;
-
-  background: rgba(0, 0, 128, 0.808);
-  box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-}
-
-.form .apply-top {
-  display: flex;
   justify-content: center;
   margin-right: 25%;
 }
@@ -791,30 +747,25 @@ form button:hover::before {
   text-align: center;
   padding-top: 2%;
   
+
+  font-size: calc(10px + 2vmin);
+  color: white;
+
 }
 
-.history p{
-  width: 15rem;
-  margin-left: 20%;
-
-  padding-bottom: 2%;
-  text-align: center;
+.App-link {
+  color: #61dafb;
 }
 
-
-.history:hover{
-  cursor: pointer;
-  background-color: navy;
-  box-shadow: 34px 34px 68px #cccccc, -34px -34px 68px #f4f4f4;
-
-  h3{
-    color: #f09819;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-
-  p{
-    color: #fff;
+  to {
+    transform: rotate(360deg);
   }
 }
+
 
 .target{
   width: 25rem;
@@ -933,3 +884,4 @@ p {
 .each-icon:hover p {
   display: block;
 }
+
