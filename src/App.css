@@ -1,4 +1,3 @@
-
 .navbar {
   background-color: rgba(0, 0, 128, 0.808);
   padding-top: 30px;
@@ -37,7 +36,7 @@
 .video-div{
   display: flex;
   justify-content: center;
-  margin-top: 20%;
+  margin-top: 25%;
 }
 
 .video-div p{
@@ -60,7 +59,7 @@
 .why-container{
   display: flex;
   justify-content: center;
-  margin-bottom: 20%;
+  margin-bottom: 25%;
 }
 .why-div img{
   width: 30rem;
@@ -74,7 +73,7 @@
 
 .why-text {
   position: absolute;
-  width: 18rem;
+  width: 25rem;
   padding: 3%;
   background-color: white;
   border-radius: 15%;
@@ -195,7 +194,7 @@ footer .socials a svg:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 
   h3 {
     text-align: center;
@@ -235,7 +234,7 @@ footer .socials a svg:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 45%;
+  margin-bottom: 50%;
   
 
 }
@@ -476,22 +475,17 @@ footer .socials a svg:hover {
   justify-content: space-around;
 }
 
-.App {
+.academicContent {
+  padding: 15px;
+  margin-bottom: 30%;
+  margin-right: 15%;
+  
   text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  h3 {
+    color: navy;
   }
 }
-
 
 .academicContent li {
   list-style: none;
@@ -531,17 +525,65 @@ footer .socials a svg:hover {
   justify-content: center;
 }
 .details {
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding: 5px;
+
+  p{
+    text-align: center;
+  }
+}
+.slick-slide > div {
+  margin: 10px;
+}
+
+
+/* Custom arrows */
+.custom-prev-arrow,
+.custom-next-arrow {
+  background-color: navy; 
+  color: #fff; 
+  border: none;
+  border-radius: 10%;
+  padding: 10px; 
+  cursor: pointer; 
+  font-size: 24px;
+}
+
+.custom-prev-arrow {
+  position: absolute;
+  right: 1500px; 
+  top: 50%;
+  transform: translateY(-50%); 
+}
+
+.custom-next-arrow {
+  position: absolute;
+  left: 1500px; 
+  top: 50%;
+  transform: translateY(-50%); 
+}
+
+.form {
+  margin-left: 15%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+  width: 800px;
+  padding: 40px;
+
+  background: rgba(0, 0, 128, 0.808);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.form .apply-top {
+  display: flex;
   justify-content: center;
   margin-right: 25%;
-}
 }
 
 .apply-top h2 {
@@ -749,25 +791,30 @@ form button:hover::before {
   text-align: center;
   padding-top: 2%;
   
-
-  font-size: calc(10px + 2vmin);
-  color: white;
-
 }
 
-.App-link {
-  color: #61dafb;
+.history p{
+  width: 15rem;
+  margin-left: 20%;
+
+  padding-bottom: 2%;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.history:hover{
+  cursor: pointer;
+  background-color: navy;
+  box-shadow: 34px 34px 68px #cccccc, -34px -34px 68px #f4f4f4;
+
+  h3{
+    color: #f09819;
   }
-  to {
-    transform: rotate(360deg);
+
+  p{
+    color: #fff;
   }
 }
-
 
 .target{
   width: 25rem;
@@ -842,12 +889,17 @@ p {
   text-align: center;
 
   h1{
-    color: navy;
+    color: #f09819;
   }
 
   p{
     color: #f09819;
   }
+
+}
+
+.campus-div h3{
+  color: navy;
 }
 
 .partner-div {
@@ -887,3 +939,15 @@ p {
   display: block;
 }
 
+.campus-div{
+  text-align: center;
+
+  h1{
+    color: navy;
+
+  }
+
+  p{
+    color: #f09819;
+  }
+}
