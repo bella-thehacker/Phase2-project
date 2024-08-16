@@ -75,9 +75,15 @@ function OurPartners() {
         </div>
 
         <div className="each-icon">
-          <img src="https://www.harvard.edu/wp-content/themes/core/assets/img/theme/branding-assets/footer-logo.svg" alt="Harvard Logo" />
+          <img
+            src="https://www.harvard.edu/wp-content/themes/core/assets/img/theme/branding-assets/footer-logo.svg"
+            alt="Harvard Logo"
+          />
           <p>
-            Harvard,  represents a prestigious and influential institution known for its rich history, academic excellence, and global impact. This partnership symbolizes a strong commitment to high standards in education, research, and innovation. 
+            Harvard, represents a prestigious and influential institution known
+            for its rich history, academic excellence, and global impact. This
+            partnership symbolizes a strong commitment to high standards in
+            education, research, and innovation.
           </p>
         </div>
       </div>
