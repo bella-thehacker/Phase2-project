@@ -36,18 +36,20 @@
 .video-div{
   display: flex;
   justify-content: center;
+  margin-top: 20%;
 }
 
 .video-div p{
-  width: 20rem;
+  width: 25rem;
   padding-left: 3%;
   padding-right: 3%;
   background-color: rgba(0, 0, 128, 0.808);
   border-radius: 15%;
   text-align: center;
-  padding-top: 3%;
+  padding-top: 2%;
   margin-left: 4%;
   color: #f09819;
+  padding-bottom: 2%;
 }
 
 .video-div img{
@@ -57,7 +59,7 @@
 .why-container{
   display: flex;
   justify-content: center;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
 }
 .why-div img{
   width: 30rem;
@@ -232,6 +234,7 @@ footer .socials a svg:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 45%;
   
 
 }
@@ -241,6 +244,7 @@ footer .socials a svg:hover {
  
   text-align: center;
   margin-right: 20%;
+  
   
 
   h3 {
@@ -781,6 +785,7 @@ form button:hover::before {
   
   
   
+  
 }
 .history h3{
   text-align: center;
@@ -928,4 +933,3 @@ p {
 .each-icon:hover p {
   display: block;
 }
-
