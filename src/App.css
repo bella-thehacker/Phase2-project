@@ -597,19 +597,6 @@ footer .socials a svg:hover {
   background: transparent;
 }
 
-.form a {
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  color: #03e9f4;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: 0.5s;
-  margin-top: 40px;
-  letter-spacing: 4px;
-}
 
 .form ::placeholder {
   position: absolute;
@@ -839,4 +826,53 @@ form button:hover::before {
   p{
     color: #fff;
   }
+}
+
+.partner-intro{
+  text-align: center;
+
+  h1{
+    color: navy;
+  }
+
+  p{
+    color: #f09819;
+  }
+}
+
+.partner-div {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping into multiple rows */
+  justify-content: space-around; /* Adds space between items and centers them */
+  max-width: 800px; /* Limits the total width of the container */
+  margin: 0 auto; /* Centers the container horizontally on the page */
+}
+
+.each-icon {
+  flex: 1 0 30%; /* Each icon takes about 30% of the container's width */
+  max-width: 200px; /* Ensure that icons don't get too large */
+  margin: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.each-icon img {
+  width: 100%; /* Make the image responsive */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.each-icon p {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.each-icon:hover img {
+  transform: scale(0.85);
+}
+
+.each-icon:hover p {
+  display: block;
 }
