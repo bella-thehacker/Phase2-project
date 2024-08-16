@@ -22,7 +22,7 @@ const Alumnis = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1750,
+    autoplaySpeed: 5750,
     pauseOnHover: true,
     prevArrow: <CustomPrevArrow />, 
     nextArrow: <CustomNextArrow />, 
